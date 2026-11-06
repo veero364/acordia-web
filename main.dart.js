@@ -50979,7 +50979,7 @@ return new A.Ii(new A.cu(B.as,s),new A.cu(B.as,s),new A.cu(B.as,s),new A.cu(B.as
 A.Ii.prototype={
 uo(){var s=0,r=A.t(t.H),q,p=this,o,n,m
 var $async$uo=A.u(function(a,b){if(a===1)return A.p(b,r)
-for(;;)switch(s){case 0:n=B.c.dC(p.f.a.a)
+for(;;)switch(s){case 0:n=B.c.dC(p.f.a.a).toLowerCase()
 m=p.r.a.a
 s=n.length===0||m.length===0?3:4
 break
@@ -51016,7 +51016,7 @@ break
 case 7:o=p.c
 o.toString
 s=9
-return A.m(A.AA(o,"Revis\xe1 tu correo","Te enviamos un correo a "+B.c.dC(p.f.a.a)+" para confirmar tu cuenta. Toc\xe1 el enlace y despu\xe9s volv\xe9 ac\xe1 para ingresar.\n\nSi no lo ves, revis\xe1 la carpeta de correo no deseado."),$async$uK)
+return A.m(A.AA(o,"Revis\xe1 tu correo","Te enviamos un correo a "+B.c.dC(p.f.a.a).toLowerCase()+" para confirmar tu cuenta. Toc\xe1 el enlace y despu\xe9s volv\xe9 ac\xe1 para ingresar.\n\nSi no lo ves, revis\xe1 la carpeta de correo no deseado."),$async$uK)
 case 9:p.R(new A.aCs(p))
 case 8:case 1:return A.q(q,r)}})
 return A.r($async$uK,r)},
@@ -51024,7 +51024,7 @@ ax2(){var s,r,q,p=this
 if(B.c.dC(p.x.a.a).length===0||B.c.dC(p.y.a.a).length===0)return"Ingres\xe1 tu nombre y apellido."
 s=B.c.dC(p.f.a.a)
 r=A.c6("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",!0,!1)
-if(!r.b.test(s))return"El correo electr\xf3nico no es v\xe1lido."
+if(!r.b.test(s.toLowerCase()))return"El correo electr\xf3nico no es v\xe1lido."
 q=p.r.a.a
 if(q.length<8||!B.c.m(q,A.c6("[A-Z]",!0,!1))||!B.c.m(q,A.c6("[a-z]",!0,!1))||!B.c.m(q,A.c6("[0-9]",!0,!1)))return"La contrase\xf1a debe tener al menos 8 caracteres, con may\xfasculas, min\xfasculas y n\xfameros."
 if(q!==p.w.a.a)return"Las contrase\xf1as no coinciden."
@@ -51040,7 +51040,7 @@ case 2:return A.q(null,r)}})
 return A.r($async$CP,r)},
 uk(){var s=0,r=A.t(t.H),q,p=this,o,n
 var $async$uk=A.u(function(a,b){if(a===1)return A.p(b,r)
-for(;;)switch(s){case 0:o=B.c.dC(p.f.a.a)
+for(;;)switch(s){case 0:o=B.c.dC(p.f.a.a).toLowerCase()
 n=A.c6("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",!0,!1)
 s=!n.b.test(o)?3:4
 break
@@ -51083,7 +51083,7 @@ p=p.gh4()
 s=this.a
 r=B.c.dC(s.f.a.a)
 q=s.r.a.a
-return p.xg(A.W(["nombre",B.c.dC(s.x.a.a),"apellido",B.c.dC(s.y.a.a),"ci",B.c.dC(s.z.a.a)],t.N,t.z),r,"https://veero364.github.io/acordia-web/",q)},
+return p.xg(A.W(["nombre",B.c.dC(s.x.a.a),"apellido",B.c.dC(s.y.a.a),"ci",B.c.dC(s.z.a.a)],t.N,t.z),r.toLowerCase(),"https://veero364.github.io/acordia-web/",q)},
 $S:136}
 A.aCs.prototype={
 $0(){return this.a.d=!1},
